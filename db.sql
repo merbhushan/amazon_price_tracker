@@ -25,6 +25,13 @@ CREATE TABLE IF NOT EXISTS `amazon_price_history` (
 
 -- Data exporting was unselected.
 
+-- Dumping structure for table digital_marketing.amazon_products
+CREATE TABLE IF NOT EXISTS `amazon_products` (
+  `url` varchar(1000) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Data exporting was unselected.
+
 -- Dumping structure for table digital_marketing.products
 CREATE TABLE IF NOT EXISTS `products` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
@@ -35,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `products` (
   `mrp` float DEFAULT NULL,
   `amazon_price` float DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Data exporting was unselected.
 
